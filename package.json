@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently \" npm run server\" \"npm run client\""
+  },
+  "author": "iyou",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "moment": "^2.24.0"
+  }
+}
